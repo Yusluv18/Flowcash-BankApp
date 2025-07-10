@@ -371,3 +371,52 @@ form button:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: translateY(-3px);
 }
+
+.other-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.service {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.service i {
+    font-size: 24px;
+    color: #6c63ff;
+}
+
+.service:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: #e0e0ff;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.activity-left div>div {
+    font-weight: 600;
+    font-size: 15px;
+}
