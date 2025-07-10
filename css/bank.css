@@ -312,3 +312,57 @@ form button:hover {
         transform: translateY(0);
     }
 }
+
+.app {
+    width: 100vw;
+    backdrop-filter: blur(7px);
+    background: rgba(5, 5, 5, 0.651);
+    padding: 10px 50px 5px;
+    height: 100vh;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 30px;
+}
+
+.wallet-card {
+    background: linear-gradient(135deg, #4e00c2, #7d2ae8);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.wallet-card h2 {
+    font-size: 24px;
+}
+
+.wallet-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.wallet-actions div {
+    text-align: center;
+    color: white;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
