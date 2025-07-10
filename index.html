@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bank.css">
+    <script src="Js/jquery-3.7.1.js"></script>
+    <script src="Js/bank.js"></script>
+    <title>Bank-App</title>
+</head>
+
+<body>
+
+    <section class="accountpage">
+        <div class="account-inner">
+            <div class="tab-buttons">
+                <div class="tab-btn" id="showSignup">Sign Up</div>
+                <div class="tab-btn active" id="showLogin">Login</div>
+            </div>
+            <div class="cont2 flex">
+                <div class="flex text">
+                    <p class="wat sic">👌</p>
+                    <p class="splash hide spl1"></p>
+                    <p>Fɭo₩Ca$h</p>
+                    <p class="wat sic">👌</p>
+                    <p class="splash hide spl1"></p>
+                </div>
+            </div>
+            <div class="typing-container">
+                <div id="typing-text"></div>
+            </div>
+            <div id="signupForm" class="form-section">
+                <form id="signupforms">
+                    <div class="input-group">
+                        <input type="text" id="username" placeholder=" " />
+                        <label>First name and Last name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" class="email" id="emailaddress" placeholder=" " />
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="dateofbirth" placeholder=" " />
+                        <label>Date of Birth</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="nin" placeholder=" " />
+                        <label>NiN</label>
+                    </div>
+                    <div class="input-group flex pass">
+                        <input type="password" id="password" placeholder=" " class="password" />
+                        <label>Password </label>
+                        <div class="eye eyes eye1">
+                            <div class="eye-icon">
+                                <div class="eyelid"></div>
+                                <div class="eye-ball">
+                                    <div class="pubdy">
+                                        <div class="pupil"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="warn">Password 5 to 8 characters, Alphanumeric</p>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+</body>
+
+</html>

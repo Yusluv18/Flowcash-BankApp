@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    background-image: url(../img/inb3.png);
+    background-size: cover;
+    background-position-y: 77%;
+    font-size: 16px;
+    font-weight: 500;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+
+.account-inner {
+    width: 370px;
+    background: rgba(139, 139, 139, 0.521);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 40px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.typing-container {
+    margin: 10px auto;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+#typing-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #f5f5f5;
+    border-right: 3px solid #080808;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #0202027a;
+    padding: 3px;
+
+    font-weight: 900;
+}
+.cursor-blink {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.tab-buttons {
+    display: flex;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.tab-btn.active {
+    background: #070707;
+    color: white;
+}
+
+.form-section {
+    display: none;
+    padding: 20px;
+    animation: slideFade 0.6s ease;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e1e1;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 15px;
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #bbb;
+    transition: 0.3s ease;
+}
+
+/* When input is focused, fade out placeholder */
+.input-group input:focus::placeholder {
+    opacity: 0;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    background: #161616;
+    padding: 3px 4px;
+    border-radius: 3px;
+    color: #fffefe;
+}
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    background: #161616;
+    padding: 3px 4px;
+    border-radius: 3px;
+    color: #fffefe;
+}
+
+.pass input {
+    padding-right: 14%;
+}
