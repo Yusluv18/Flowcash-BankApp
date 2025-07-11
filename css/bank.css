@@ -957,3 +957,65 @@ form button:hover {
     font-size: 2.3vmin;
     color: #63ecec;
 }
+
+/* Animations */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ban {
+    width: 27%;
+}
+
+.ban input {
+    margin-top: 10px;
+    position: relative;
+    height: 4vmin;
+    font-size: 4vmin;
+    background: linear-gradient(135deg, #4e00c2, #7d2ae8);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 800;
+    padding-right: 13%;
+}
+
+.ban .eye {
+    margin-left: -12%;
+    margin-top: 3%;
+    
+
+}
+
+.ban .eyelid {
+    background: linear-gradient(135deg, #4e00c2, #7d2ae8);
+}
+.currency{
+     margin-top: 10px;
+    font-size: xx-large;
+    font-weight: 900;
+    color: #0c085e;
+}
+.warning{
+    color: rgb(217, 247, 51);
+}
