@@ -753,3 +753,152 @@ form button:hover {
 .edit-icon:hover {
     background: #5b1ab3;
 }
+
+.done-icon {
+    padding: 6px 10px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content;
+    transition: background 0.3s ease;
+    display: none;
+    margin-top: 6px;
+}
+
+.edit-icon,
+.done-icon {
+    box-shadow: 0 0 15px rgba(248, 248, 248, 0.712);
+}
+
+.done-icon:hover {
+    background: #27ae60;
+}
+
+.close-btn {
+    margin: 10px;
+    width: 10vmin;
+}
+
+.cont {
+    width: 40%;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+}
+
+.text {
+    font-size: 4vmin;
+    font-weight: 800;
+    color: white;
+    font-family: sans-serif;
+}
+
+.water {
+    width: 5vmin;
+    height: 5vmin;
+    text-align: center;
+}
+
+.sic {
+    font-size: 3vmin;
+    height: 5vmin;
+    width: 5vmin;
+}
+
+.siz {
+    font-size: 3vmin;
+
+}
+
+.splash {
+    margin-top: -3.5vmin;
+    font-size: 2.5vmin;
+    animation: 0.2s splash linear forwards;
+}
+
+.spl1 {
+    margin-left: -3.5vmin;
+    rotate: 180deg;
+}
+
+.spl2 {
+    margin-right: -3.5vmin;
+}
+
+.Awater {
+    animation: 2s drop linear forwards;
+}
+
+@keyframes drop {
+    to {
+        transform: translateY(340%);
+    }
+}
+
+@keyframes splash {
+    to {
+        transform: translatex(10%);
+    }
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #27272773;
+    color: #ffffff;
+    padding: 9px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(31, 31, 31, 0.1);
+    z-index: 999999;
+    backdrop-filter: blur(7px);
+    font-family: sans-serif;
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+}
+
+
+.alert-content button {
+    transition: .3s;
+    background-color: transparent;
+    border: none;
+    color: #880d0d;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 1px 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+.alert-content button:hover {
+    color: #ff0000;
+    background-color: #e7e7e7;
+}
+
+.erroricon {
+    font-size: 5vmin;
+}
+
+.warn {
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+}
+
+.strong {
+    color: rgb(11, 109, 11);
+}
+
+.errormes {
+    font-size: 2vmin;
+    font-weight: 700;
+}
