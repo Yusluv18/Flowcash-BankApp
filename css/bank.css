@@ -420,3 +420,72 @@ form button:hover {
     font-weight: 600;
     font-size: 15px;
 }
+
+.activity-left small {
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.red {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.green {
+     font-weight: bold;
+    color: #2ecc71;
+}
+
+.see-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more-btn {
+    padding: 10px 20px;
+    background-color: #4a4aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #3838e0;
+    transform: translateY(-2px);
+}
+
+.history {
+    position: absolute;
+    height: 63vh;
+    width: 25vw;
+    top: 36vh;
+    right: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.884);
+    display: none;
+    color: white;
+    padding: 3px 10px;
+
+}
+
+.recent-activity h3 {
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    height: 10%;
+}
+
+.trans {
+
+    height: 80%;
+    width: 100%;
+    margin: 7px auto;
+    overflow: auto;
+    padding: 10px;
+}
