@@ -489,3 +489,267 @@ form button:hover {
     overflow: auto;
     padding: 10px;
 }
+
+.trans::-webkit-scrollbar {
+    transition: .3s;
+    width: 4px;
+}
+
+.trans::-webkit-scrollbar:hover {
+    width: 7px;
+}
+
+.trans::-webkit-scrollbar-thumb {
+    background: #4b4a4a;
+    border-radius: 10;
+}
+
+#footer {
+    background: black;
+    padding: 30px;
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: space-around;
+    justify-self: end;
+    gap: 20px;
+    margin-top: 60px;
+    width: 80%;
+
+}
+
+.footer-actions div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 35px;
+    border-radius: 10px;
+
+}
+
+.footer-actions div:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.footer-actions i {
+    font-size: 28px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-actions i:hover {
+    color: #6c63ff;
+    transform: scale(1.2);
+}
+
+.footer-actions div p {
+    font-size: medium;
+}
+
+.opt {
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.opts {
+    position: relative;
+    height: 56px;
+    width: 180px;
+    text-align: right;
+}
+
+.log {
+    transition: .3s;
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    background-color: white;
+    display: none;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.699);
+
+}
+
+.logout {
+    padding: 5px;
+    width: 100%;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.log h4 {
+    transition: .3s;
+}
+
+.log h4:hover {
+    background-color: #1b1b1bf1;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.profile {
+    background: #5b1ab3;
+    padding: 5px;
+    color: white;
+
+}
+
+.half {
+    width: 30%;
+}
+
+.myprofile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #5b1ab3;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 7px auto;
+    animation: fadeIn 0.6s ease-in-out;
+    color: white;
+}
+
+.type {
+    color: #7d2ae8;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.cashflow {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    width: 25%;
+    height: 75vh;
+    gap: 13px;
+    border: none;
+    border-radius: none;
+    background-color: white;
+    z-index: 999;
+}
+
+.cashflow label {
+    color: #555353;
+}
+
+.acting {
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.btn {
+    transition: .3s;
+    margin-top: 20px;
+    background-color: #4d4bd6;
+    color: rgb(68, 66, 66);
+    border: none;
+    border-radius: 10px;
+}
+
+.btns {
+    text-align: center;
+    font-weight: 800;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.casf .cancel {
+    transition: .3s;
+    color: rgb(15, 15, 15);
+    font-size: large;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.casf .cancel:hover {
+    color: #4d4bd6;
+}
+
+.cont2 {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cont2 .text {
+    color: black;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-row label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-info input {
+    border: none;
+    outline: none;
+}
+
+.covered {
+    z-index: 9999;
+}
+
+.info-row input {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f9f9f9;
+}
+
+.info-row .dim {
+    background-color: #cfcfcf5e;
+    border: none;
+    color: rgb(235, 235, 235);
+}
+
+.info-row span {
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.icon-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.icon-group i {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.edit-icon {
+    margin-top: 8px;
+    align-self: flex-end;
+    padding: 6px 10px;
+    background: #7d2ae8;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    background: #5b1ab3;
+}
